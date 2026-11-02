@@ -77,6 +77,6 @@ print(f'{label}: {confidence:.1%}')
 - `outputs/training_curves.png`: training curves
 - `outputs/10_test_predictions.png`: sample predictions and ground-truth labels
 
-## Project summary (under 300 words)
+## Project summary
 
 A Cats vs Dogs image classifier was developed using MobileNetV2 transfer learning. The TensorFlow Datasets Cats vs Dogs collection provided 23,262 usable images, divided into training (70%), validation (15%), and held-out testing (15%). Image preprocessing resized inputs to 160 × 160 pixels. A pretrained MobileNetV2 backbone extracted image features, while a custom binary classification head was trained. The final evaluation on 3,489 test images achieved 98.45% accuracy. Evaluation artifacts include precision, recall, F1-score, a confusion matrix, training curves, and ten test predictions with ground-truth labels. The saved Keras model can be loaded to classify new images.
